@@ -9,7 +9,7 @@ import io.ktor.client.request.*
 import io.ktor.serialization.kotlinx.json.*
 import utils.Constants
 
-class NewsApiClient {
+object NewsApiClient {
     private val client = HttpClient(CIO) {
         install(ContentNegotiation) {
             json()
